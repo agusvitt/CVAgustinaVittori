@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -10,26 +11,13 @@ body {
 header {
     background-color: #b95252; /* Fondo rosa viejo para el encabezado */
     color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.Tituloprincipal {
-    margin: 20px 0;
-    color: #b95252; /* Color de texto para los títulos */
-}
-
-nav {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 30px 0;
+    text-align: center; /* Centrar el contenido del encabezado */
 }
 
 ul {
     list-style: none;
-    padding: 0;
+    padding: 30px;
     margin: 0;
 }
 
@@ -49,5 +37,15 @@ ul li a:hover {
 
 /* Estilos para la imagen */
 img {
-    border-radius: 60%; /* Hace que la imagen tenga un borde redondo */
+    border-radius: 70%; /* Hace que la imagen tenga un borde redondo */
+}
+
+/* Estilos para el título centrado */
+.centrado {
+    text-align: center /* Centrar el contenido dentro de la sección */
+    margin-top: 50px; /* Agregar espacio superior */
+}
+
+h1 {
+    color: #b95252; /* Color de texto para el título */
 }

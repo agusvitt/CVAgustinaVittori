@@ -8,8 +8,25 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <div class="menu-hamburguesa">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icono-menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="datospersonales.html">Datos Personales</a></li>
+                <li><a href="estudios.html">Estudios</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="competencias.html">Competencias</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <h1>Agustina Vittori</h1>
-    <img src="img/aguscv.jpg" alt="imagen Agustina Vittori">
+    <div class="sobre-mi">
+        <img src="img/aguscv.jpg" alt="imagen Agustina Vittori">
+        <p>Sobre mí</p>
+        <h2> Persona proactiva, responsable y ordenada. Logro desenvolverme en cualquier ámbito laboral fácilmente. Gran capacidad para trabajar en equipo.</h2>
+    </div>
     <header>
         <nav>
             <ul>
@@ -20,6 +37,27 @@
             </ul>
         </nav>
     </header>
-    </div>
 </body>
+<script>
+    const btnMenu = document.getElementById('btn-menu');
+    const menu = document.querySelector('.menu');
+
+    btnMenu.addEventListener('change', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
+<script>
+    const secciones = document.querySelectorAll('body > *');
+
+    secciones.forEach(seccion => {
+        seccion.addEventListener('mouseover', () => {
+            seccion.style.backgroundColor = '#FFCCCC'; // Cambia el color al pasar el cursor
+        });
+
+        seccion.addEventListener('mouseout', () => {
+            seccion.style.backgroundColor = ''; // Restablece el color al retirar el cursor
+        });
+    });
+</script>
 </html>

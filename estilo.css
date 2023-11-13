@@ -35,10 +35,7 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para la imagen */
-img {
-    border-radius: 70%; /* Hace que la imagen tenga un borde redondo */
-}
+
 
 /* Estilos para el título centrado */
 .centrado {
@@ -48,4 +45,76 @@ img {
 
 h1 {
     color: #b95252; /* Color de texto para el título */
+    text-align: center;
+}
+
+.menu-hamburguesa {
+    display: none;
+    justify-content: flex-end;
+}
+
+.icono-menu {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #b95252;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.menu.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    border-radius: 30%; /* Borde redondeado para la imagen */
+    margin-right: 20px;
+}
+.sobre-mi {
+    text-align: center;
+}
+
+.sobre-mi img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 30%;
+    margin-bottom: 10px;
+}
+
+.sobre-mi p {
+    font-weight: bold;
+    color: #b95252;
+    margin: 0;
+}
+h2 {
+    color: #685959; /* Color de texto para el título */
+    text-align: center;
+    font-size: 15px
 }
